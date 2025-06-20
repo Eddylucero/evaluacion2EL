@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Circuito;
 
 class CircuitosController extends Controller
 {
@@ -12,6 +13,9 @@ class CircuitosController extends Controller
     public function index()
     {
         //
+        $circuitos = Circuito::all();
+        return view('circuitos.index', compact('circuitos'));
+
     }
 
     /**

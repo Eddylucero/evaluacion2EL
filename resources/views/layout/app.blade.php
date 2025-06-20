@@ -21,19 +21,19 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="{{ route('clientes.index') }}">Geo 2</a>
+            <a class="navbar-brand" href="{{ route('circuitos.index') }}"> <i class="fa fa-car"></i> Circuitos</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('clientes.index') }}">
+                        <a class="nav-link" href="#">
                             <i class="fa fa-users"></i> Clientes
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('predios.index') }}">
+                        <a class="nav-link" href="#">
                             <i class="fa fa-users"></i> Registrar Predios
                         </a>
                     </li>
