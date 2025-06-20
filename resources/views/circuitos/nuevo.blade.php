@@ -9,10 +9,10 @@
         <form action="{{ route('circuitos.store') }}" method="POST">
             @csrf
             <label><b>Pais:</b></label>
-            <input type="text" name="pais" id="pais" placeholder="Ingrese el pais del circuito" required class="form-control"><br>
+            <input type="text" name="pais" id="pais" placeholder="Ingrese el pais del circuito..." required class="form-control"><br>
 
             <label><b>Nombre:</b></label>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del circuito" required class="form-control"><br>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese el nombre del circuito..." required class="form-control"><br>
 
             @for ($i = 1; $i <= 5; $i++)
             <div class="row">
