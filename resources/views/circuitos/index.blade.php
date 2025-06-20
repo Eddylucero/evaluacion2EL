@@ -26,6 +26,7 @@
             <table class="table table-hover table-bordered align-middle">
                 <thead class="table-dark">
                     <tr>
+                        <th>ID</th>
                         <th>Pais</th>
                         <th>Nombre</th>
                         <th>Coordenada N°1</th>
@@ -39,12 +40,14 @@
                 <tbody>
                     @forelse($circuitos as $circuitoTemporal)
                         <tr>
-                            <td>{{ $circuitoTemporal->propietario }}</td>
-                            <td>{{ $circuitoTemporal->clave }}</td>
+                            <td>{{ $circuitoTemporal->id }}</td>
+                            <td>{{ $circuitoTemporal->pais }}</td>
+                            <td>{{ $circuitoTemporal->nombre }}</td>
                             <td>Latitud: {{ $circuitoTemporal->latitud1 }}<br>Longitud: {{ $circuitoTemporal->longitud1 }}</td>
                             <td>Latitud: {{ $circuitoTemporal->latitud2 }}<br>Longitud: {{ $circuitoTemporal->longitud2 }}</td>
                             <td>Latitud: {{ $circuitoTemporal->latitud3 }}<br>Longitud: {{ $circuitoTemporal->longitud3 }}</td>
                             <td>Latitud: {{ $circuitoTemporal->latitud4 }}<br>Longitud: {{ $circuitoTemporal->longitud4 }}</td>
+                            <td>Latitud: {{ $circuitoTemporal->latitud5 }}<br>Longitud: {{ $circuitoTemporal->longitud5 }}</td>
                             <td class="text-center">
                                 <a href="#" class="btn btn-sm btn-outline-warning me-1">
                                     <i class="fa fa-pen"></i>
