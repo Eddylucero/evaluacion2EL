@@ -49,7 +49,7 @@ class CircuitosController extends Controller
         ];
         Circuito::create($datosCircuito);
         // Pasar mensaje a la vista con nombre 'message'
-        return redirect()->route('circuitos.index')->with('message', 'Circuito creado correctamente');
+        return redirect()->route('circuitos.index')->with('message', 'CIRCUITO CREADO EXITOSAMENTE');
     }
 
     /**
@@ -66,6 +66,8 @@ class CircuitosController extends Controller
     public function edit(string $id)
     {
         //
+        $predio = Circuito::findOrFail($id); // Busca el cliente o lanza error 404
+        return view('circuitos.editar', compact('circuito'));
     }
 
     /**
@@ -82,5 +84,9 @@ class CircuitosController extends Controller
     public function destroy(string $id)
     {
         //
+        $circuitos = Circuito::findOrFail($id);
+        $circuitos->delete();
+    
+        return redirect()->route('circuitos.index')->with('message', 'CIRCUITO ELIMINADO CON SUCCESO');
     }
 }

@@ -46,7 +46,7 @@
                             <td>Latitud: {{ $circuitoTemporal->latitud3 }}<br>Longitud: {{ $circuitoTemporal->longitud3 }}</td>
                             <td>Latitud: {{ $circuitoTemporal->latitud4 }}<br>Longitud: {{ $circuitoTemporal->longitud4 }}</td>
                             <td class="text-center">
-                                <a href="{{ route('circuitos.edit', $circuitoTemporal->id) }}" class="btn btn-sm btn-outline-warning me-1">
+                                <a href="#" class="btn btn-sm btn-outline-warning me-1">
                                     <i class="fa fa-pen"></i>
                                 </a>
 
